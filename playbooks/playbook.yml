@@ -1,0 +1,12 @@
+- name: uruchom role
+  hosts: all
+  connection: local
+  become: true
+
+  roles:
+    - packages
+    - user
+    - geerlingguy.docker
+    - christiangda.awscli
+    - christiangda.awscli_configure
+    - diodonfrost.terraform
